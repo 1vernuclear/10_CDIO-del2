@@ -11,21 +11,20 @@ public class Player {
         this.balance = new Account(startingScore);
     }
 
-    public int updateScore (int amount){
+    public void updateScore (int amount){
         if (signum(amount) == -1){
             balance.subtractFromBalance(-amount);
         }
         else {
             balance.addToBalance(amount);
         }
+    }
+
+    public int getBalance(){
         return balance.getBalance();
     }
 
     public String getPlayerName() {
         return playerName;
-    }
-
-    public void setPlayerName(String playerName) {
-        this.playerName = playerName;
     }
 }
