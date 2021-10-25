@@ -11,6 +11,16 @@ public class Account {
         balance += amount;
         return balance;
     }
+
+    public int subtractFromBalance(int amount){
+        if (amount > balance) {
+            balance = 0;
+        }
+        else {
+            balance -= amount;
+        }
+        return balance;
+    }
     public int getBalance() {
         return balance;
     }
