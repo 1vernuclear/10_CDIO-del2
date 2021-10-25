@@ -13,4 +13,10 @@ class AccountTest {
     void addToBalance() {
         assertEquals(1500, acct.addToBalance(500), 0.1);
     }
+
+    @Test
+    void subtractFromBalance() {
+        assertEquals(500, acct.subtractFromBalance(500), 0.1);
+        assertEquals(0, acct.subtractFromBalance(2000), 0.1);
+    }
 }
