@@ -4,7 +4,8 @@ package Spil;
 import java.util.ArrayList;
 
 public class DiceCollection {
-    ArrayList<Die> diceArray = new ArrayList<>();
+    private final ArrayList<Die> diceArray = new ArrayList<>();
+    private int rollSum;
 
     public DiceCollection(int sides, int amount) {
         //Creates die with variable "Sides" until variable "amount" of die has been created.
@@ -38,12 +39,23 @@ public class DiceCollection {
     //Roll of the die
     public void roll() {
         diceArray.forEach(Die::rollDie);
+        rollSum = 0;
+        for (Die die : diceArray){
+            rollSum += die.getFaceValue();
+        }
     }
 
     public ArrayList<Die> getDiceArray() {
         return diceArray;
     }
 
+    public int getDiceFaceValue(int index){
+        return diceArray.get(index-1).getFaceValue();
+    }
 
+    public int getRollSum() {
+        return rollSum;
+    }
 }
+
 
