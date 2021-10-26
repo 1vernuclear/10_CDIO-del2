@@ -2,6 +2,8 @@ package Spil;
 
 public class SquareList {
 
+    // Creates a 3 by 11 array that holds the names, + or - values, as well as a boolean for extra turns, for each square in the game
+    
     public static String[][] SquareList = {
             {"Tower", "250", "False"},
             {"Crater", "-100", "False"},
@@ -15,6 +17,8 @@ public class SquareList {
             {"Pit", "-50", "False"},
             {"Goldmine", "650", "False"},
     };
+    
+    // 3 getters for each respective coloumn in the array, to getSquareName, getSquareScore or getExtraTurn from the array.
 
     static String getSquareName(int square){
         return SquareName.getString(SquareList[square][0]);
