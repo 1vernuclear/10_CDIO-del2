@@ -9,13 +9,13 @@ public class Die {
      * Constructor sets amount of sides of die
      * @param sides: int, defines number of sides
      */
-    public Die (int sides){
+    protected Die (int sides){
         numberOfSides = sides;
     }
     /**
      * Constructor sets number of sides to 6
      */
-    public Die() {
+    protected Die() {
         numberOfSides = 6;
     }
     /**
