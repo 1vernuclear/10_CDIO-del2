@@ -16,13 +16,13 @@ public class SquareList {
             {"Goldmine", "650", "False"},
     };
 
+    static String getSquareName(int square){
+        return SquareName.getString(SquareList[square][0]);
+    }
+
     static int getSquareScore(int square){
         int penge = Integer.parseInt(SquareList[square][1]);
         return penge;
-    }
-
-    static String getSquareName(int square){
-        return SquareName.getString(SquareList[square][0]);
     }
 
     static boolean getExtraTurn(int square){
