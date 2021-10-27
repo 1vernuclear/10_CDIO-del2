@@ -21,12 +21,11 @@ public class SquareList {
     // 3 getters for each respective coloumn in the array, to getSquareName, getSquareScore or getExtraTurn from the array.
 
     static String getSquareName(int square){
-        return SquareName.getString(SquareList[square][0]);
+        return SquareList[square][0];
     }
 
     static int getSquareScore(int square){
-        int penge = Integer.parseInt(SquareList[square][1]);
-        return penge;
+        return Integer.parseInt(SquareList[square][1]);
     }
 
     static boolean getExtraTurn(int square){
