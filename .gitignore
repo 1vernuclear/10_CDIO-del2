@@ -104,3 +104,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+*.idea
+/10_CDIO-del2.iml

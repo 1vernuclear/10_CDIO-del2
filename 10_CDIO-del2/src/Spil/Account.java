@@ -14,14 +14,13 @@ public class Account {
         return balance;
     }
 
-    public int subtractFromBalance(int amount){
+    public void subtractFromBalance(int amount){
         if (abs(amount) > balance) {
             balance = 0;
         }
         else {
             balance -= abs(amount);
         }
-        return balance;
     }
     public int getBalance() {
         return balance;
