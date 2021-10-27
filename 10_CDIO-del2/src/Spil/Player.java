@@ -12,7 +12,7 @@ public class Player {
     }
 
     public int updateScore (int amount){
-        if (signum(amount) == -1){
+        if (signum(amount) == -1){                  //signum method, returns -1 if amount is negative.
             balance.subtractFromBalance(-amount);
         }
         else {
