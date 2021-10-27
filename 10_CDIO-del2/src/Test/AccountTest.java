@@ -1,4 +1,4 @@
-package test;
+package Test;
 
 import Spil.Account;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package test;
+package Test;
 
 import Spil.Player;
 import org.junit.jupiter.api.Test;
