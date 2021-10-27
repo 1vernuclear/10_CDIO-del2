@@ -7,7 +7,7 @@ public class GameLogic {
 
     private final SquareList square = new SquareList();
 
-    private final Dice dice = new Dice();
+    private final DiceCollection dice = new DiceCollection();
 
     private boolean playerBelow3000 = true;
 
@@ -70,9 +70,7 @@ public class GameLogic {
 
         userinput.next();
 
-        dice.rollDice();
-
-        dice.setRollSum();
+        dice.roll();
 
         System.out.println(player.getPlayerName() + " lands on " + square.getSquareName(dice.getRollSum() - 2));
     }
