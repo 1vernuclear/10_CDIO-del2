@@ -13,5 +13,6 @@ class PlayerTest {
     void updateScore() {
         assertEquals(1500, player1.updateScore(500), 0.1);
         assertEquals(1000, player1.updateScore(-500), 0.1);
+        assertEquals(0, player1.updateScore(-5000), 0.1);
     }
 }
