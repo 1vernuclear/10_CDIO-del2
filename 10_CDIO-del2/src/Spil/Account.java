@@ -1,5 +1,7 @@
 package Spil;
 
+import static java.lang.Math.abs;
+
 public class Account {
     private int balance;
 
@@ -13,11 +15,11 @@ public class Account {
     }
 
     public int subtractFromBalance(int amount){
-        if (amount > balance) {
+        if (abs(amount) > balance) {
             balance = 0;
         }
         else {
-            balance -= amount;
+            balance -= abs(amount);
         }
         return balance;
     }
