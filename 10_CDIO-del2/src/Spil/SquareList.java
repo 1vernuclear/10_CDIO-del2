@@ -2,7 +2,7 @@ package Spil;
 
 public class SquareList {
 
-    // Creates a 3 by 11 array that holds the names, + or - values, as well as a boolean for extra turns, for each square in the game
+    // Creates a 2-dimensional 3 by 11 array that holds the names, + or - values, as well as a boolean for extra turns, for each square in the game
 
     private final String[][] SquareList = {
             {"Tower", "250", "False"},
@@ -12,8 +12,8 @@ public class SquareList {
             {"WalledCity", "180", "False"},
             {"Monastery", "0", "False"},
             {"BlackCave", "-70", "False"},
-            {"HutsMountain", "60", "False"},
-            {"Werewall", "-80", "True"},
+            {"HutsintheMountain", "60", "False"},
+            {"TheWerewall", "-80", "True"},
             {"Pit", "-50", "False"},
             {"Goldmine", "650", "False"},
     };
