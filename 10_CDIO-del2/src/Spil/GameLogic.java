@@ -105,7 +105,7 @@ public class GameLogic {
     private void gameWon(Player player){
         System.out.println(player.getPlayerName() + " balance = " + player.getBalance());
 
-        System.out.print(player.getPlayerName() + "has won the game! :D");
+        System.out.print(player.getPlayerName() + " has won the game! :D");
     }
 
     /**
